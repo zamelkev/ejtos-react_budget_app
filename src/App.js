@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -8,8 +8,8 @@ import AllocationForm from "./components/AllocationForm";
 import Budget from "./components/Budget";
 import ExpenseTotal from "./components/ExpenseTotal";
 import ExpenseList from "./components/ExpenseList";
-import ExpenseItem from "./components/ExpenseItem";
 import RemainingBudget from "./components/Remaining";
+import Currency from "./components/Currency";
 
 const App = () => {
   return (
@@ -36,6 +36,12 @@ const App = () => {
             /* Add ExpenseTotal component here */
             <div className="col-sm">
               <ExpenseTotal />
+            </div>
+          }
+          {
+            /* Currency Selector */
+            <div className="col-sm">
+              <Currency />
             </div>
           }
         </div>
